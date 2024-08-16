@@ -10,8 +10,8 @@ app.post("/send-mail", async (req, res) => {
     console.log(email)   
   console.log("Server listening");
   const transporter = nodemailer.createTransport({
-    host: "smtp.gmail.com", // Correct SMTP host for Gmail
-    port: 465, // Port for secure connections
+    host: "smtp.gmail.com", 
+    port: 465, 
     secure: true, // true for 465, false for other ports
     auth: {
       user: 'krupalsavaliya0pvt@gmail.com', // Your Gmail address
