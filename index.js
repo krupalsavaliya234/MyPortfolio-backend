@@ -7,6 +7,11 @@ const app = express();
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cors());
+app.use(cors({
+  origin: 'https://krupal-savaliya.vercel.app',
+  methods: ['GET', 'POST'], // Specify the methods you want to allow
+  credentials: true // If you're dealing with cookies/auth
+}));
 app.get("/",(req,res)=>{
   res.send("Hello ☺️")
 })
