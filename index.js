@@ -32,7 +32,7 @@ app.post("/send-mail", async (req, res) => {
       to: `  krupalsavaliya0@gmail.com , ${data.email}`, // list of receivers
       subject: `Hello ✔ ${data.name} .   `, // Subject line
       text: "hello sir, My name is Savaliya krupal .  Thank you for connecting 🎉. We will connect soon ☺️", // plain text body
-      html: `<b>${data.subject}</b> <p>your message is ${data.message} </p> hello sir, My name is Savaliya krupal .  Thank you for connecting 🎉. We will connect soon ☺️  `, // html body
+      html: `<b>${data.subject}</b> <p>your message is ${data.message} </p> hello sir, My name is Savaliya krupal .  Thank you for connecting 🎉. We will connect soon ☺️ . from krupalsavaliya0@gmail.com  to  ${data.email} `, // html body
     });
 
     // console.log("Message sent: %s", info.messageId);
